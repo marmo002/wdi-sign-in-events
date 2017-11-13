@@ -73,11 +73,11 @@ textarea {
 }
 
 /* ==========================================================================
-   Author's custom styles ---> START YOUR STYLING BELOW 
+   Author's custom styles ---> START YOUR STYLING BELOW
    ========================================================================== */
 
-html { 
-  background: url(../img/bg.jpg) no-repeat center center fixed; 
+html {
+  background: url(../img/bg.jpg) no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -136,11 +136,25 @@ button.signin:hover {
     background-color: rgba(30,30,30,0.8);
 }
 
+.fadein {
+  -webkit-animation: 0.5s linear fade_in;
+  animation: 0.5s linear fade_in;
+}
+@-webkit-keyframes fade_in { from { opacity: 0; } to { opacity: 1; }  }
+@keyframes fade_in { from { opacity: 0; } to { opacity: 1; }  }
+
+.fadeout {
+  -webkit-animation: 0.5s linear fade_out;
+  animation: 0.5s linear fade_out;
+}
+@-webkit-keyframes fade_out { from { opacity: 1; } to { opacity: 0; }  }
+@keyframes fade_out { from { opacity: 1; } to { opacity: 0; }  }
+
 .getstarted {
     display: block;
     width: 400px;
     height: 18em;
-    padding: 2em;
+    padding: 2em
     background-color: #b9c2cc;
     position: absolute;
     margin: auto;
@@ -193,19 +207,3 @@ button.submit {
 .getstarted>input.error {
     outline: 2px solid #bc2a39;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
